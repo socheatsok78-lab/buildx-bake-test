@@ -1,7 +1,7 @@
 target "default" {
   target = "build"
   output = ["type=cacheonly"]
-  dockerfile = "BAKE_CMD_CONTEXT/Dockerfile"
+  dockerfile = "cwd://Dockerfile"
   args = {
     BAKE_CMD_CONTEXT = BAKE_CMD_CONTEXT
   }
